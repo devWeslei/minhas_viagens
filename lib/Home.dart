@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minhas_viagens/Mapa.dart';
+import 'package:minhas_viagens/SplashScreen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -26,7 +28,10 @@ class _HomeState extends State<Home> {
   }
 
   _adicionarLocal(){
-
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => Mapa())
+    );
   }
 
   @override
@@ -34,11 +39,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(title: Text("Minhas viagens"),),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-          backgroundColor: Color(0xff0066cc),
-          onPressed: (){
-            _adicionarLocal;
-          }
+        backgroundColor: Color(0xff0066cc),
+          onPressed: () {
+            _adicionarLocal();
+          },
+        child: Icon(Icons.add)
       ),
       body:Column(
         children: [
@@ -46,12 +51,10 @@ class _HomeState extends State<Home> {
               child: ListView.builder(
                   itemCount: _listaViagens.length,
                   itemBuilder: (context, index){
-
                     String titulo = _listaViagens[index];
-
                     return GestureDetector(
                       onTap: (){
-                        _abrirMapa;
+                        _abrirMapa();
                       },
                       child: Card(
                         child: ListTile(
@@ -61,7 +64,7 @@ class _HomeState extends State<Home> {
                             children: [
                               GestureDetector(
                                 onTap: (){
-                                  _excluirViagem;
+                                  _excluirViagem();
                                 },
                                 child: Padding(
                                   padding: EdgeInsets.all(8),
