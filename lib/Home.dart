@@ -73,20 +73,16 @@ class _HomeState extends State<Home> {
           builder: (context, snapshot){
             switch(snapshot.connectionState){
               case ConnectionState.none:
-              case ConnectionState.waiting:
-              case ConnectionState.active:
-              case ConnectionState.done:
-
-              if (!snapshot.hasData) {
-                return const Center(
-                  child: Text('Loading...'),
-                );
-              }
-              if (snapshot.hasError) {
                 return const Center(
                     child: Text('Something went wrong.')
                 );
-              }
+              case ConnectionState.waiting:
+                return const Center(
+                  child: Text('Loading...'),
+                );
+              case ConnectionState.active:
+              case ConnectionState.done:
+
                 QuerySnapshot querySnapshot = snapshot.requireData;
                 List<DocumentSnapshot> viagens = querySnapshot.docs.toList();
 

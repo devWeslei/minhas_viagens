@@ -157,6 +157,7 @@ class _MapaState extends State<Mapa> {
             mapType: MapType.normal,
             initialCameraPosition: _posicaoCamera,
           onMapCreated: _onMapCreated,
+          myLocationEnabled: true,
           onLongPress: _adicionarMarcador,
         ),
       ),
