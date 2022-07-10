@@ -1,17 +1,39 @@
 # minhas_viagens
 
-A new Flutter project.
+## Screens
+![Preview-Screens](https://github.com/devWeslei/minhas_viagens/blob/main/imagens/demo.jpg)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## About this Project
+travel app using:      
+-Firestore Database.      
+-google_maps_flutter.   
+-geolocator.   
+-geocoding.     
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Functionalities   
+-current location.      
+-bookmarks for places visited.      
+-save visited places in database.   
+-list of places visited.       
+-exclude visited places from the list.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Difficulties
+-because the course is old and the frequent updates of Flutter many functionalities and syntax have changed, so I fixed it by searching one by one.   
+This challenge sure made me improve my skills! lol    
+In the end it was pretty cool!
+
+
+</br>
+
+>if you liked, contribute by giving a ⭐ !! I'll be grateful 😁      
+
+</br>   
+<div align="center">   
+  
+   [![Linkedin Badge](https://img.shields.io/badge/-weslei%20tiago-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/weslei-tiago-53b47a208/)](https://www.linkedin.com/in/weslei-tiago-53b47a208/)   
+  
+   </div>
 
